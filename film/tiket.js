@@ -1,6 +1,5 @@
-import express  from "express";
-
-const router =  express.Router();
+import express from 'express';
+const router = express.Router();
 
 const tiket = [
     {
@@ -17,8 +16,8 @@ const tiket = [
     }
 ];
 
-router.get("/", (req, res) => {
-    res.send(tiket);
+router.get('/', (req, res) => {
+    res.send('Tiket route!');
 });
 
-export default router
+module.exports = router
